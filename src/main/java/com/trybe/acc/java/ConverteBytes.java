@@ -13,7 +13,7 @@ public class ConverteBytes {
 
     System.out.println("Digite um número:");
     byte valor = scan.nextByte();
-		int qtdBits = valor * 8;
+    int qtdBits = valor * 8;
 
     System.out.println(valor + " bytes correspodem a " + qtdBits + " bits");
     scan.close();
