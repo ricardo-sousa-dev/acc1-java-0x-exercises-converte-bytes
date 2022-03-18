@@ -4,19 +4,18 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ConverteBytes {
-	
-	public static void main(String[] args) {
-			// Ler a entrada de um número pelo console
-			Scanner scan = new Scanner(System.in).useLocale(Locale.US);
-			
-			System.out.println("Digite um número:");
-			byte valor = scan.nextByte();
-			
-			// Seu código aqui
-			
-			
-			// Imprime a saída no console. OBS: descomente a próxima linha
-			//System.out.println(valor + " bytes correspodem a " + qtdBits + " bits");
+  /**
+   * Método inicial.
+   *
+   */
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in).useLocale(Locale.US);
 
-		}
+    System.out.println("Digite um número:");
+    byte valor = scan.nextByte();
+		int qtdBits = valor * 8;
+
+    System.out.println(valor + " bytes correspodem a " + qtdBits + " bits");
+    scan.close();
+  }
 }
